@@ -1,5 +1,6 @@
 <script>
   import TaskForm from '../components/TaskForm.svelte';
+  import Task from '../components/Task.svelte';
   import {tasks} from '../stores/taskStore'
 </script>
 
@@ -7,8 +8,10 @@
   <h1>Tasks</h1>
 
   <TaskForm/>
-  {#each $tasks as task}
-  <Task task={task} index={task.id}/>
+  <ul>
+  {#each $tasks as task (task.id)}
+  <Task task={task} />
   {/each}
+  </ul>
 
 </main>
