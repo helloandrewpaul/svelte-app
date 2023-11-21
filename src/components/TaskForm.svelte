@@ -13,6 +13,6 @@
     <label for="task">Task</label>
     <input  bind:value={task} type="text" name="task" placeholder="Add your task"/>
   </div>
-  <button type="submit" class="submit-button">Submit</button>
+  <button type="submit">Submit</button>
 
 </form>
