@@ -8,7 +8,7 @@
   }
 </script>
 
-<form on:submit|preventDefault={handleSubmit} class="my-6">
+<form on:submit|preventDefault={handleSubmit}>
   <div class="flex flex-col text-sm mb-2">
     <label  class="font-bold mb-2 text-gray-800" for="task">Task</label>
     <input  bind:value={task} class="ppearance-none shadow-sm border border-gray-200 p-2 focus:outline-none focus:border-gray-500 rounded-lg" type="text" name="task" placeholder="Add your task"/>

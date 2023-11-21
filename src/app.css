@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .app {
   @apply container mx-auto my-6 max-w-lg;
+}
+h1 {
+  @apply text-2xl font-bold text-center text-gray-800 md:text-3xl
+}
+
+form {
+  @apply my-6;
 }
 
