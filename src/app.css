@@ -28,7 +28,11 @@ input[type=text] {
 }
 
 button[type=submit] {
-  @apply w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4;
+  @apply w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 transition-colors duration-500;
+}
+
+button[type=submit]:disabled {
+  @apply bg-gray-100 text-black cursor-not-allowed text-gray-200;
 }
 
 li {
