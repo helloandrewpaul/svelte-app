@@ -2,6 +2,6 @@
   import '../app.css'
 </script>
 
-<div class="app">
+<div class="ontainer mx-auto my-6 max-w-lg">
   <slot></slot>
 </div>
