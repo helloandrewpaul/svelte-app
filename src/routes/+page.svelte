@@ -10,9 +10,9 @@
   <TaskForm/>
   
   <ul>
-  {#each $tasks as task (task.id)}
-  <Task task={task} />
-  {/each}
+    {#each $tasks as task (task.id)}
+      <Task task={task} />
+    {/each}
   </ul>
 
 </main>
