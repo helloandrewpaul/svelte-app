@@ -6,6 +6,7 @@
     addTask(task);
     task = '';
   }
+  
 </script>
 
 <form on:submit|preventDefault={handleSubmit}>
@@ -13,6 +14,6 @@
     <label for="task">Task</label>
     <input  bind:value={task} type="text" name="task" placeholder="Add your task"/>
   </div>
-  <button type="submit">Submit</button>
+  <button id='form-button' type="submit">Submit</button>
 
 </form>
